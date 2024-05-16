@@ -4,7 +4,7 @@
 
 let parola = prompt("Inserisci parola");
 
-if ( palindromChecker(parola) === true){
+if ( palindromChecker(parola.toLowerCase()) === true){
   console.log("palindroma")
 }else {
   console.log("non palindroma")
@@ -26,7 +26,7 @@ function palindromChecker(word) {
       
     }
 
-    if (word === parolaInvertita) {
+    if (word == parolaInvertita) {
       return true
     } else {
       return false
