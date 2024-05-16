@@ -1,39 +1,39 @@
-// // Palidroma
-// //  Chiedere all’utente di inserire una parola
-// //  Creare una funzione per capire se la parola inserita è palindroma
+// Palidroma
+//  Chiedere all’utente di inserire una parola
+//  Creare una funzione per capire se la parola inserita è palindroma
 
-// let parola = prompt("Inserisci la prima parola");
+let parola = prompt("Inserisci parola");
 
-// if ( palindromChecker(parola) === true){
-//   console.log("palindroma")
-// }else {
-//   console.log("non palindroma")
-// }
-
-
+if ( palindromChecker(parola) === true){
+  console.log("palindroma")
+}else {
+  console.log("non palindroma")
+}
 
 
 
-// function palindromChecker(word) {
-
-//     let parolaInvertita ="";
 
 
-//     for (let index = word.length -1; index >= 0; index--) {
+function palindromChecker(word) {
+
+    let parolaInvertita ="";
+
+
+    for (let index = word.length -1; index >= 0; index--) {
       
-//       parolaInvertita += word[index];
+      parolaInvertita += word[index];
       
       
-//     }
+    }
 
-//     if (word === parolaInvertita) {
-//       return true
-//     } else {
-//       return false
-//     }
+    if (word === parolaInvertita) {
+      return true
+    } else {
+      return false
+    }
 
 
-// }
+}
 
 
 
@@ -52,8 +52,8 @@
 
   
 
-    let sceltaUtente = prompt("Scegli pari o dispari:");
-    let numeroUtente = parseInt(prompt("Inserisci un numero"), 10);
+let sceltaUtente = prompt("Scegli pari o dispari:");
+let numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5"), 10);
 
 let numeroComputer = numberGenerator()
 
