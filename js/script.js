@@ -10,11 +10,13 @@ function palindromChecker(word) {
     let parolaInvertita ="";
 
 
-    for (let index = word.length -1; index >= 0; index++) {
+    for (let index = word.length -1; index >= 0; index--) {
       
-      parolaInvertita += word[];
+      parolaInvertita += word[index];
       
       
     }
 
+    return parolaInvertita
+    console.log(parolaInvertita)
 }
