@@ -56,6 +56,14 @@ let sceltaUtente = "pari"
 
 let numeroUtente = 4
 
+let numeroComputer = numberGenerator()
+
+if (sceltaUtente === addition(numeroUtente, numeroComputer)) {
+    console.log("Hai vinto")
+  
+} else {
+  console.log("hai perso")
+}
 
 
 
@@ -64,7 +72,7 @@ function numberGenerator() {
     return computerNumber
 }
 
-function addition(numberHuman, numberPC ) {
+function addition(numberHuman, numberPC) {
 
   sum = numberHuman + numberPC;
     if (sum % 2 === 0) {
