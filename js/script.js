@@ -4,7 +4,11 @@
 
 let parola = prompt("Inserisci la prima parola");
 
-palindromChecker(parola);
+if ( palindromChecker(parola) === true){
+  console.log("palindroma")
+}else {
+  console.log("non palindroma")
+}
 
 
 
@@ -27,4 +31,6 @@ function palindromChecker(word) {
     } else {
       return false
     }
+
+
 }
