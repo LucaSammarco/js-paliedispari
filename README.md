@@ -26,6 +26,6 @@ Dichiariamo chi ha vinto.
 
         //
             * Prompt pari o dispari e prompt numero da 1 a 5
-            * Creaiamo un numero ramdom per il computer
+            * Creiamo un numero ramdom per il computer
             * creiamo funzione che ha come argomenti due numeri e determiniamo se se la somma è uguale a pari o dispari.
             * Se il risultato della funzione è uguale alla scelta dell utente, pari o dispari. Allora ha vinto l'utente se no ha vinto il computer
