@@ -1,8 +1,13 @@
 // Palidroma
-// // Chiedere all’utente di inserire una parola
-// // Creare una funzione per capire se la parola inserita è palindroma
+//  Chiedere all’utente di inserire una parola
+//  Creare una funzione per capire se la parola inserita è palindroma
 
-// let parola = prompt("Inserisci la prima parola");
+let parola = prompt("Inserisci la prima parola");
+
+palindromChecker(parola);
+
+
+
 
 
 function palindromChecker(word) {
