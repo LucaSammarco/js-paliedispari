@@ -52,17 +52,16 @@
 
   
 
-let sceltaUtente = "pari"
-
-let numeroUtente = 4
+    let sceltaUtente = prompt("Scegli pari o dispari:");
+    let numeroUtente = parseInt(prompt("Inserisci un numero"), 10);
 
 let numeroComputer = numberGenerator()
 
 if (sceltaUtente === addition(numeroUtente, numeroComputer)) {
-    console.log("Hai vinto")
+    console.log("Vince Utente")
   
 } else {
-  console.log("hai perso")
+  console.log("Vince Computer")
 }
 
 
@@ -83,3 +82,7 @@ function addition(numberHuman, numberPC) {
   
 }
 
+console.log("numero del pc " + numeroComputer)
+console.log("numero utente " + numeroUtente)
+
+console.log("scelta utente " + sceltaUtente)
