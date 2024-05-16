@@ -17,6 +17,9 @@ function palindromChecker(word) {
       
     }
 
-    return parolaInvertita
-    console.log(parolaInvertita)
+    if (word === parolaInvertita) {
+      return true
+    } else {
+      return false
+    }
 }
