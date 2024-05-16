@@ -64,4 +64,14 @@ function numberGenerator() {
     return computerNumber
 }
 
+function addition(numberHuman, numberPC ) {
+
+  sum = numberHuman + numberPC;
+    if (sum % 2 === 0) {
+      return "pari"
+    } else {
+      return "dispari"
+    }
+  
+}
 
