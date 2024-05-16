@@ -55,7 +55,25 @@ function palindromChecker(word) {
 let sceltaUtente = prompt("Scegli pari o dispari:");
 let numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5"), 10);
 
+if (numeroUtente > 5) {
+
+  while (numeroUtente > 5) {  
+  
+    let nuovoNumero = parseInt(prompt("Inserisci un numero da 1 a 5"), 10);
+      if (nuovoNumero < 6) {
+
+        numeroUtente = nuovoNumero
+        
+      }
+  }
+  
+}
+
+
+
+
 let numeroComputer = numberGenerator()
+
 
 if (sceltaUtente === addition(numeroUtente, numeroComputer)) {
     console.log("Vince Utente")
@@ -82,7 +100,7 @@ function addition(numberHuman, numberPC) {
   
 }
 
-console.log("numero del pc " + numeroComputer)
-console.log("numero utente " + numeroUtente)
 
+console.log("numero utente " + numeroUtente)
+console.log("numero del pc " + numeroComputer)
 console.log("scelta utente " + sceltaUtente)
